@@ -1,0 +1,52 @@
+site_name: Your Name — Portfolio
+site_description: Reports, demos, and notes
+site_url: https://<your-username>.github.io
+repo_url: https://github.com/<your-username>/<your-username>.github.io
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.footer
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.share
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  icon:
+    logo: material/account
+    repo: fontawesome/brands/github
+nav:
+  - Home: index.md
+  - Reports:
+      - Overview: reports/index.md
+      - Sample Report: reports/sample-report.md
+  - Demos:
+      - Overview: demos/index.md
+      - Streamlit Embed: demos/streamlit-embed.md
+  - About: about.md
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - glightbox
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/<your-username>
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/<your-handle>/
