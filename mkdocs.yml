@@ -1,7 +1,7 @@
-site_name: Your Name — Portfolio
+site_name: Mal's Portfolio
 site_description: Reports, demos, and notes
-site_url: https://<your-username>.github.io
-repo_url: https://github.com/<your-username>/<your-username>.github.io
+site_url: https://MalJin042.github.io
+repo_url: https://github.com/MalJin042/MalJin042.github.io
 theme:
   name: material
   features:
