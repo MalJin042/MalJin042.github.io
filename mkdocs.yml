@@ -1,6 +1,6 @@
 site_name: Mal's Portfolio
 site_description: Reports, demos, and notes
-site_url: https://MalJin042.github.io
+site_url: https://maljin042.github.io
 repo_url: https://github.com/MalJin042/MalJin042.github.io
 theme:
   name: material
