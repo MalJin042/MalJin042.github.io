@@ -1,7 +1,8 @@
-site_name: Mal's Portfolio
+site_name: "Mal's Portfolio"
 site_description: Reports, demos, and notes
 site_url: https://maljin042.github.io
 repo_url: https://github.com/MalJin042/MalJin042.github.io
+
 theme:
   name: material
   features:
@@ -19,6 +20,7 @@ theme:
   icon:
     logo: material/account
     repo: fontawesome/brands/github
+
 nav:
   - Home: index.md
   - Reports:
@@ -28,11 +30,13 @@ nav:
       - Overview: demos/index.md
       - Streamlit Embed: demos/streamlit-embed.md
   - About: about.md
+
 plugins:
   - search
   - minify:
       minify_html: true
   - glightbox
+
 markdown_extensions:
   - admonition
   - toc:
@@ -44,9 +48,10 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.emoji
+
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/<your-username>
+      link: https://github.com/MalJin042
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/<your-handle>/
+      link: https://www.linkedin.com/in/zhen-jin-0b434194/
