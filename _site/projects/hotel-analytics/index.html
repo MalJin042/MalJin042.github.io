@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Data Analytics - Mal Jin — Data & AI</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Projects</h2>
+            <button class="sidebar-close">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="/" class="sidebar-project sidebar-home">
+                <span class="project-title">Home</span>
+            </a>
+            
+            
+            <a href="/projects/hotel-analytics/" class="sidebar-project">
+                <span class="project-number">1</span>
+                <span class="project-title">Hotel Data Analytics</span>
+            </a>
+            
+            <a href="/projects/wildlife-identification/" class="sidebar-project">
+                <span class="project-number">2</span>
+                <span class="project-title">Wildlife Identification</span>
+            </a>
+            
+            <a href="/projects/ski-pose-detection/" class="sidebar-project">
+                <span class="project-number">3</span>
+                <span class="project-title">Ski Pose Detection</span>
+            </a>
+            
+            <a href="/projects/reliefgraph-assistant/" class="sidebar-project">
+                <span class="project-number">4</span>
+                <span class="project-title">ReliefGraph Assistant</span>
+            </a>
+            
+        </nav>
+    </div>
+
+    <div class="overlay"></div>
+
+    <header>
+        <button class="menu-toggle">☰</button>
+        <a href="/" class="site-title-link">
+            <h1 class="site-title">Mal Jin — Data & AI</h1>
+        </a>
+        <nav class="header-links">
+            <a href="https://www.linkedin.com/in/zhen-jin-0b434194/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:mal.jin042@gmail.com">Email</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="project-detail">
+    <header class="project-header">
+        <h1>Hotel Data Analytics</h1>
+        <p class="project-description">A comprehensive analytics dashboard focusing on revenue optimization through customer segmentation, demand forecasting, and pricing strategies.</p>
+    </header>
+
+    
+    <section class="project-pdf">
+        <iframe src="/assets/pdfs/hotel-analytics.pdf" width="100%" height="800px" frameborder="0"></iframe>
+    </section>
+    
+
+    <div class="project-content">
+        
+
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mal Jin — Data & AI</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+        const sidebarClose = document.querySelector('.sidebar-close');
+
+        function openSidebar() {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        menuToggle.addEventListener('click', openSidebar);
+        sidebarClose.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+    </script>
+</body>
+</html>

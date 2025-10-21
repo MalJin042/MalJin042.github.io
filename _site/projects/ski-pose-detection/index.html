@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ski Pose Detection - Mal Jin — Data & AI</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Projects</h2>
+            <button class="sidebar-close">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="/" class="sidebar-project sidebar-home">
+                <span class="project-title">Home</span>
+            </a>
+            
+            
+            <a href="/projects/hotel-analytics/" class="sidebar-project">
+                <span class="project-number">1</span>
+                <span class="project-title">Hotel Data Analytics</span>
+            </a>
+            
+            <a href="/projects/wildlife-identification/" class="sidebar-project">
+                <span class="project-number">2</span>
+                <span class="project-title">Wildlife Identification</span>
+            </a>
+            
+            <a href="/projects/ski-pose-detection/" class="sidebar-project">
+                <span class="project-number">3</span>
+                <span class="project-title">Ski Pose Detection</span>
+            </a>
+            
+            <a href="/projects/reliefgraph-assistant/" class="sidebar-project">
+                <span class="project-number">4</span>
+                <span class="project-title">ReliefGraph Assistant</span>
+            </a>
+            
+        </nav>
+    </div>
+
+    <div class="overlay"></div>
+
+    <header>
+        <button class="menu-toggle">☰</button>
+        <a href="/" class="site-title-link">
+            <h1 class="site-title">Mal Jin — Data & AI</h1>
+        </a>
+        <nav class="header-links">
+            <a href="https://www.linkedin.com/in/zhen-jin-0b434194/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:mal.jin042@gmail.com">Email</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="project-detail">
+    <header class="project-header">
+        <h1>Ski Pose Detection</h1>
+        <p class="project-description">Computer vision for detecting skier's pose and movement patterns.</p>
+    </header>
+
+    
+
+    <div class="project-content">
+        <h2 id="introduction">Introduction</h2>
+
+<p>This is an ongoing project.</p>
+
+<p>This project develops an <strong>AI-powered motion analysis system</strong> designed to evaluate skier performance using computer vision and biomechanics modeling.<br />
+By analyzing videos and images of skiers, the system identifies key movement patterns, measures technical parameters, and provides feedback aligned with professional frameworks such as <strong>CSIA</strong>, <strong>PSIA</strong>, or <strong>ISIA</strong> standards.</p>
+
+<p>The goal is to help athletes, instructors, and recreational skiers gain data-driven insights into their skiing techniques — enhancing training efficiency and overall performance.</p>
+
+<hr />
+
+<h3 id="key-features">Key Features</h3>
+
+<ul>
+  <li><strong>Automatic Motion Detection</strong>: Detects and tracks body and ski movement in real time using advanced pose estimation models.</li>
+  <li><strong>Technique Evaluation</strong>: Quantifies edge angle, pressure control, balance, and coordination according to professional ski methodology.</li>
+  <li><strong>Performance Feedback</strong>: Generates visual reports highlighting strengths, weaknesses, and recommended drills or corrections.</li>
+  <li><strong>Adaptive Standards</strong>: Supports evaluation frameworks from multiple ski organizations (CSIA, PSIA, ISIA, etc.).</li>
+  <li><strong>Video Visualization</strong>: Produces annotated clips showing turns, pole plants, edge angles, and balance indicators.</li>
+  <li><strong>Scalable Analysis</strong>: Handles large video datasets for athlete tracking, coaching, or automated assessment systems.</li>
+</ul>
+
+<hr />
+
+<h3 id="technical-approach">Technical Approach</h3>
+
+<p>The system integrates <strong>computer vision, deep learning, and biomechanical modeling</strong>:</p>
+
+<ul>
+  <li><strong>Pose Estimation &amp; Tracking</strong>: Uses YOLO and MMPose-based architectures to detect and track body joints and skis.</li>
+  <li><strong>Turn Segmentation</strong>: Identifies turn phases — initiation, control, and completion — from motion dynamics.</li>
+  <li><strong>Feature Extraction</strong>: Calculates edge angles, center of mass (COM) displacement, upper-lower body separation, and pole plant timing.</li>
+  <li><strong>Evaluation &amp; Scoring</strong>: Maps quantitative features to professional assessment criteria and generates feedback reports.</li>
+  <li><strong>Visualization &amp; Reporting</strong>: Outputs annotated videos and structured performance summaries (PDF/HTML).</li>
+</ul>
+
+<hr />
+
+<h3 id="objectives">Objectives</h3>
+
+<ul>
+  <li>Build a reliable <strong>AI assistant for ski performance analysis</strong>.</li>
+  <li>Provide <strong>objective, data-driven feedback</strong> for coaches and learners.</li>
+  <li>Enable <strong>standardized evaluation</strong> across various skiing systems and skill levels.</li>
+  <li>Promote <strong>technical progression and safety</strong> through motion insight and correction.</li>
+</ul>
+
+<hr />
+
+<h3 id="future-directions">Future Directions</h3>
+
+<ul>
+  <li>Integrate <strong>3D pose estimation</strong> for improved angle accuracy on steep terrain.</li>
+  <li>Develop <strong>mobile and web-based interfaces</strong> for real-time on-slope analysis.</li>
+  <li>Create a <strong>training database</strong> of expert skier patterns for comparative benchmarking.</li>
+  <li>Extend application to <strong>snowboard and other alpine sports</strong>.</li>
+</ul>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mal Jin — Data & AI</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+        const sidebarClose = document.querySelector('.sidebar-close');
+
+        function openSidebar() {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        menuToggle.addEventListener('click', openSidebar);
+        sidebarClose.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+    </script>
+</body>
+</html>

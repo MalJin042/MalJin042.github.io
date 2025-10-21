@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Mal Jin — Data & AI</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Projects</h2>
+            <button class="sidebar-close">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="/" class="sidebar-project sidebar-home">
+                <span class="project-title">Home</span>
+            </a>
+            
+            
+            <a href="/projects/hotel-analytics/" class="sidebar-project">
+                <span class="project-number">1</span>
+                <span class="project-title">Hotel Data Analytics</span>
+            </a>
+            
+            <a href="/projects/wildlife-identification/" class="sidebar-project">
+                <span class="project-number">2</span>
+                <span class="project-title">Wildlife Identification</span>
+            </a>
+            
+            <a href="/projects/ski-pose-detection/" class="sidebar-project">
+                <span class="project-number">3</span>
+                <span class="project-title">Ski Pose Detection</span>
+            </a>
+            
+            <a href="/projects/reliefgraph-assistant/" class="sidebar-project">
+                <span class="project-number">4</span>
+                <span class="project-title">ReliefGraph Assistant</span>
+            </a>
+            
+        </nav>
+    </div>
+
+    <div class="overlay"></div>
+
+    <header>
+        <button class="menu-toggle">☰</button>
+        <a href="/" class="site-title-link">
+            <h1 class="site-title">Mal Jin — Data & AI</h1>
+        </a>
+        <nav class="header-links">
+            <a href="https://www.linkedin.com/in/zhen-jin-0b434194/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:mal.jin042@gmail.com">Email</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+    <h2>Projects</h2>
+    <p class="hero-description">A collection of applied research and development projects exploring advanced methods in data science, machine learning, and AI-driven analytics to solve real-world challenges across diverse domains.</p>
+</section>
+
+<section class="projects-grid">
+    
+    
+    <a href="/projects/hotel-analytics/" class="project-card">
+        <img src="/assets/images/hotel.jpg" alt="Hotel Data Analytics" class="project-image">
+        <div class="project-overlay">
+            <h3>Hotel Data Analytics</h3>
+            <p>A comprehensive analytics dashboard focusing on revenue optimization through customer segmentation, demand forecasting, and pricing strategies.</p>
+        </div>
+    </a>
+    
+    <a href="/projects/wildlife-identification/" class="project-card">
+        <img src="/assets/images/wildlife.png" alt="Wildlife Identification" class="project-image">
+        <div class="project-overlay">
+            <h3>Wildlife Identification</h3>
+            <p>Computer vision system for automated wildlife species classification.</p>
+        </div>
+    </a>
+    
+    <a href="/projects/ski-pose-detection/" class="project-card">
+        <img src="/assets/images/ski.jpg" alt="Ski Pose Detection" class="project-image">
+        <div class="project-overlay">
+            <h3>Ski Pose Detection</h3>
+            <p>Computer vision for detecting skier's pose and movement patterns.</p>
+        </div>
+    </a>
+    
+    <a href="/projects/reliefgraph-assistant/" class="project-card">
+        <img src="/assets/images/reliefgraph.png" alt="ReliefGraph Assistant" class="project-image">
+        <div class="project-overlay">
+            <h3>ReliefGraph Assistant</h3>
+            <p>An intelligent system that automates crisis information collection and analysis, delivering faster, reliable insights to support humanitarian decision-making.</p>
+        </div>
+    </a>
+    
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mal Jin — Data & AI</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+        const sidebarClose = document.querySelector('.sidebar-close');
+
+        function openSidebar() {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        menuToggle.addEventListener('click', openSidebar);
+        sidebarClose.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+    </script>
+</body>
+</html>

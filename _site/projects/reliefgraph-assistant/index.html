@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReliefGraph Assistant - Mal Jin — Data & AI</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Projects</h2>
+            <button class="sidebar-close">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="/" class="sidebar-project sidebar-home">
+                <span class="project-title">Home</span>
+            </a>
+            
+            
+            <a href="/projects/hotel-analytics/" class="sidebar-project">
+                <span class="project-number">1</span>
+                <span class="project-title">Hotel Data Analytics</span>
+            </a>
+            
+            <a href="/projects/wildlife-identification/" class="sidebar-project">
+                <span class="project-number">2</span>
+                <span class="project-title">Wildlife Identification</span>
+            </a>
+            
+            <a href="/projects/ski-pose-detection/" class="sidebar-project">
+                <span class="project-number">3</span>
+                <span class="project-title">Ski Pose Detection</span>
+            </a>
+            
+            <a href="/projects/reliefgraph-assistant/" class="sidebar-project">
+                <span class="project-number">4</span>
+                <span class="project-title">ReliefGraph Assistant</span>
+            </a>
+            
+        </nav>
+    </div>
+
+    <div class="overlay"></div>
+
+    <header>
+        <button class="menu-toggle">☰</button>
+        <a href="/" class="site-title-link">
+            <h1 class="site-title">Mal Jin — Data & AI</h1>
+        </a>
+        <nav class="header-links">
+            <a href="https://www.linkedin.com/in/zhen-jin-0b434194/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:mal.jin042@gmail.com">Email</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="project-detail">
+    <header class="project-header">
+        <h1>ReliefGraph Assistant</h1>
+        <p class="project-description">An intelligent system that automates crisis information collection and analysis, delivering faster, reliable insights to support humanitarian decision-making.</p>
+    </header>
+
+    
+
+    <div class="project-content">
+        <h2 id="introduction">Introduction</h2>
+
+<p>This project aims to create an <strong>AI-powered humanitarian intelligence platform</strong> that streamlines how organizations collect, analyze, and interpret crisis-related data. Currently, humanitarian agencies often rely on <strong>manual data gathering and fragmented reporting</strong>, which leads to delays, inconsistencies, and limited situational awareness.</p>
+
+<p>Our system addresses these issues by <strong>automating data extraction, integration, and analysis</strong> from diverse sources such as news reports, social media, and open datasets. Through <strong>natural language processing (NLP)</strong> and <strong>knowledge graph technologies</strong>, the platform identifies key entities (e.g., locations, organizations, disaster types) and their relationships, transforming unstructured data into <strong>structured, actionable insights</strong>.</p>
+
+<p>By offering <strong>real-time visual analytics and AI-driven summaries</strong>, the project enables decision-makers to <strong>detect emerging crises faster</strong>, <strong>coordinate cross-agency responses</strong>, and <strong>allocate resources more efficiently</strong>. Moreover, built-in transparency features ensure that every piece of information is <strong>traceable to its source</strong>, promoting <strong>accountability and trust</strong> among global partners.</p>
+
+<p>Ultimately, the project enhances <strong>situational awareness</strong>, <strong>reduces manual workloads</strong>, and supports <strong>evidence-based humanitarian operations</strong>, contributing to more <strong>effective and timely crisis response worldwide</strong>.</p>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mal Jin — Data & AI</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+        const sidebarClose = document.querySelector('.sidebar-close');
+
+        function openSidebar() {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        menuToggle.addEventListener('click', openSidebar);
+        sidebarClose.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+    </script>
+</body>
+</html>

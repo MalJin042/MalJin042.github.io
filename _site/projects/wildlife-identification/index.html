@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Identification - Mal Jin — Data & AI</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Projects</h2>
+            <button class="sidebar-close">&times;</button>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="/" class="sidebar-project sidebar-home">
+                <span class="project-title">Home</span>
+            </a>
+            
+            
+            <a href="/projects/hotel-analytics/" class="sidebar-project">
+                <span class="project-number">1</span>
+                <span class="project-title">Hotel Data Analytics</span>
+            </a>
+            
+            <a href="/projects/wildlife-identification/" class="sidebar-project">
+                <span class="project-number">2</span>
+                <span class="project-title">Wildlife Identification</span>
+            </a>
+            
+            <a href="/projects/ski-pose-detection/" class="sidebar-project">
+                <span class="project-number">3</span>
+                <span class="project-title">Ski Pose Detection</span>
+            </a>
+            
+            <a href="/projects/reliefgraph-assistant/" class="sidebar-project">
+                <span class="project-number">4</span>
+                <span class="project-title">ReliefGraph Assistant</span>
+            </a>
+            
+        </nav>
+    </div>
+
+    <div class="overlay"></div>
+
+    <header>
+        <button class="menu-toggle">☰</button>
+        <a href="/" class="site-title-link">
+            <h1 class="site-title">Mal Jin — Data & AI</h1>
+        </a>
+        <nav class="header-links">
+            <a href="https://www.linkedin.com/in/zhen-jin-0b434194/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:mal.jin042@gmail.com">Email</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="project-detail">
+    <header class="project-header">
+        <h1>Wildlife Identification</h1>
+        <p class="project-description">Computer vision system for automated wildlife species classification.</p>
+    </header>
+
+    
+
+    <div class="project-content">
+        <h2 id="introduction">Introduction</h2>
+
+<p>This is an ongoing project.</p>
+
+<p>This project builds upon Microsoft’s <strong><a href="https://github.com/microsoft/CameraTraps">CameraTraps</a></strong> framework to develop a <strong>region-specific computer vision system</strong> for automatically identifying and classifying wildlife species in <strong>Canada’s diverse ecosystems</strong>. By leveraging deep learning and convolutional neural networks (CNNs), the system enhances species recognition performance for North American wildlife, addressing the current lack of pre-trained models tailored to this region. The project aims to support <strong>ecologists, researchers, and conservation agencies</strong> in more accurately monitoring biodiversity and ecological changes across Canada.</p>
+
+<hr />
+
+<h3 id="key-features">Key Features</h3>
+
+<ul>
+  <li><strong>Region-Specific Model Training</strong>: Develops and fine-tunes models optimized for Canadian wildlife species</li>
+  <li><strong>Enhanced Detection Accuracy</strong>: Improves recognition performance under various weather, lighting, and habitat conditions</li>
+  <li><strong>Automated Image Analysis</strong>: Processes large-scale camera trap data efficiently with minimal human intervention</li>
+  <li><strong>Biodiversity Monitoring Support</strong>: Assists in long-term ecological studies and conservation management</li>
+</ul>
+
+<hr />
+
+<h3 id="technical-approach">Technical Approach</h3>
+
+<p>The system extends Microsoft’s <strong>CameraTraps</strong> infrastructure and applies <strong>transfer learning</strong> on top of state-of-the-art object detection architectures. By curating and labeling wildlife datasets specific to Canada, the model is <strong>fine-tuned for local species identification</strong>, improving detection precision and reducing false positives. The workflow is optimized for <strong>GPU acceleration</strong> and <strong>batch inference</strong>, enabling efficient processing of large image collections from distributed camera networks.</p>
+
+    </div>
+</article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mal Jin — Data & AI</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.overlay');
+        const sidebarClose = document.querySelector('.sidebar-close');
+
+        function openSidebar() {
+            sidebar.classList.add('active');
+            overlay.classList.add('active');
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        menuToggle.addEventListener('click', openSidebar);
+        sidebarClose.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+    </script>
+</body>
+</html>
