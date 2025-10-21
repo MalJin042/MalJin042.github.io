@@ -2,7 +2,7 @@
 title: Mal Jin — Data & AI
 description: A collection of applied research and development projects exploring advanced methods in data science, machine learning, and AI-driven analytics to solve real-world challenges across diverse domains.
 baseurl: "" # Leave empty for username.github.io
-url: "https://yourusername.github.io" # Change to your GitHub Pages URL
+url: "https://maljin042.github.io/" # Change to your GitHub Pages URL
 
 # Build settings
 markdown: kramdown
